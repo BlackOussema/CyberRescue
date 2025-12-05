@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Message Sent | CyberRescue</title>
-
-<style>
-    body{
-        background:#0d1320;
-        color:#e9f1ff;
-        font-family:Inter,system-ui,sans-serif;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-        margin:0;
-        text-align:center;
-        flex-direction:column;
-        padding:20px;
-    }
-    h1{font-size:28px;margin-bottom:10px;}
-    p{color:#9aa4b2;margin-bottom:20px;}
-    a{
-        background:#2b9fff;
-        color:#fff;
-        padding:10px 16px;
-        border-radius:8px;
-        text-decoration:none;
-        font-weight:600;
-        transition:0.25s;
-    }
-    a:hover{background:#1983e6;}
-</style>
-
-<script>
-function switchLang(lang){
-    document.documentElement.lang = lang;
-    document.getElementById("en").style.display = (lang==="en") ? "block" : "none";
-    document.getElementById("ar").style.display = (lang==="ar") ? "block" : "none";
-}
-window.onload = ()=> switchLang("en");
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent Successfully</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0a0f1c;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .box {
+            background: #121829;
+            padding: 40px 60px;
+            border-radius: 12px;
+            border: 1px solid #1e2a43;
+        }
+        h1 {
+            color: #4cb8ff;
+        }
+        a {
+            display: inline-block;
+            margin-top: 18px;
+            background: #3ca9ff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            background: #1f8de3;
+        }
+    </style>
 </head>
-
 <body>
-
-<div id="en">
-    <h1>Message Sent Securely ✔️</h1>
-    <p>Thank you! We will protect your privacy and respond as soon as possible.</p>
-    <a href="index.html">Back to Home</a><br><br>
-    <a href="#" onclick="switchLang('ar')">العربية</a>
+<div class="box">
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully.<br>We will contact you as soon as possible.</p>
+    <a href="index.html">Back to Home</a>
 </div>
-
-<div id="ar" style="display:none;direction:rtl">
-    <h1>✔️ تم إرسال الرسالة بأمان</h1>
-    <p>شكرًا لك! سنحمي خصوصيتك وسنرد عليك في أقرب وقت.</p>
-    <a href="index.html">الرجوع للصفحة الرئيسية</a><br><br>
-    <a href="#" onclick="switchLang('en')">English</a>
-</div>
-
 </body>
 </html>
+
