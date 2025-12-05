@@ -3,76 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberShield TN – Help & Support</title>
+    <title>CyberShield TN</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Roboto", sans-serif;
             background: #0a0f1c;
-            color: #e6e6e6;
+            color: #e6eefc;
         }
+
         header {
-            background: #121829;
-            padding: 20px 40px;
-            font-size: 22px;
-            font-weight: bold;
             text-align: center;
-            border-bottom: 1px solid #1e2a43;
+            padding: 25px 0;
+            font-size: 28px;
+            font-weight: 700;
+            color: #37a0ff;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid #1c273a;
         }
+
         section {
+            width: 80%;
             max-width: 900px;
-            margin: 40px auto;
-            background: #121829;
-            padding: 30px;
+            margin: 35px auto;
+            background: #0f1729;
             border-radius: 12px;
-            border: 1px solid #1e2a43;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 140, 255, 0.08);
         }
+
         h2 {
-            margin-bottom: 10px;
-            color: #4cb8ff;
+            color: #3eb5ff;
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-left: 4px solid #3eb5ff;
+            padding-left: 10px;
         }
+
         ul li {
             margin: 8px 0;
+            font-size: 15px;
         }
+
+        .contact-desc {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
         input, textarea {
             width: 100%;
+            background: #1a2236;
+            border: 1px solid #23314a;
+            outline: none;
             padding: 12px;
             border-radius: 8px;
-            border: none;
-            margin: 10px 0 18px;
-            background: #0c1324;
-            color: white;
-            font-size: 15px;
-            outline: none;
+            color: #e6eefc;
+            margin: 8px 0 16px;
         }
-        input:focus, textarea:focus {
-            border: 1px solid #3ca9ff;
+
+        textarea {
+            height: 130px;
+            resize: none;
         }
+
         button {
-            background: #3ca9ff;
-            padding: 12px 20px;
+            background: #3eb5ff;
+            padding: 12px 25px;
             border-radius: 8px;
             border: none;
-            font-size: 16px;
-            color: white;
             cursor: pointer;
+            font-size: 15px;
             font-weight: 600;
+            transition: 0.2s;
+            color: #09101e;
         }
+
         button:hover {
-            background: #1f8de3;
+            background: #66c8ff;
         }
+
         footer {
             text-align: center;
-            color: #8290aa;
-            padding: 20px;
-            margin-top: 40px;
+            color: #61708c;
+            padding: 25px 0;
             font-size: 14px;
         }
+
+        @media (max-width: 550px) {
+            section {
+                width: 92%;
+                padding: 20px;
+            }
+            header {
+                font-size: 22px;
+            }
+        }
     </style>
+
 </head>
 <body>
 
-<header>CyberShield TN</header>
+<header>
+    CyberShield TN
+</header>
 
 <section>
     <h2>Immediate Safety Steps</h2>
@@ -86,20 +124,21 @@
 
 <section>
     <h2>Contact Us</h2>
-    <p>If you need urgent help, send us a message. We reply securely and anonymously.</p>
+    <p class="contact-desc">If you need urgent help, send us a message. We reply securely and anonymously.</p>
 
     <form action="https://formspree.io/f/xpwlrzka" method="POST">
+
         <input type="email" name="email" placeholder="Your Email (optional)">
         <textarea name="message" placeholder="Your Message" required></textarea>
-
-        <!-- Redirect after sending -->
-       
 
         <button type="submit">Send Message</button>
     </form>
 </section>
 
-<footer>© 2025 CyberShield TN by Ghariani Oussema – Support & Protection</footer>
+<footer>
+    © 2025 CyberShield TN — All Rights Reserved
+</footer>
 
 </body>
 </html>
+
